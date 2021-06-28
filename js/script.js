@@ -13,7 +13,7 @@ Formulario.addEventListener('submit', function recebeEventoForm(e) {
     const Imagem = Formulario.querySelector('.Imagem');
     alert("Dados inseridos, role a página para ver o anúncio");
     resultados.innerHTML +=
-        "<section class=\"textColor\">\n" +
+        "<section class=\"text-center\">\n" +
         "<h1 class=\"anuncio\">Anúncio</h1>\n" +
         "<hr />\n" +
         "<span>Título: " + Titulo.value + "</span><br>" +
@@ -24,6 +24,6 @@ Formulario.addEventListener('submit', function recebeEventoForm(e) {
         "<span>Área Construída: " + AreaConstruida.value + "</span><br>" +
         "<span>Localidade: " + Localidade.value + "</span><br>" +
         "<span>Preço: " + Preco.value + "</span><br>" +
-        "<img src=\"" + Imagem.value + "\" alt=\"Imagem\" class=\"imagem\"/>" +
+        "<img src=\"" + Imagem.value + "\" alt=\"Imagem\" class=\"imagem\"width =\" 350\"/>" +
         "</section>"
 });
