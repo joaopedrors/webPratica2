@@ -6,44 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB PRATICA 01</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
 
 
-    <body>
-        <section class="container">
-            <img src="img/CL.png" alt="Logotipo CL" width="300" height="300" id="logo">
-            <h2 class="main-title">Insira seu anúncio aqui:</h2>
-            <form action="" method="GET" class="Formulario">
+    <section class="container-fluid text-center styleSection">
+        <img src="img/CL.png" alt="Logotipo CL" width="300" height="300" id="logo" class="rounded-circle img-fluid">
+        <h2 class=" styletitle text-center">Insira seu anúncio aqui:</h2>
+        <form action="" method="GET" class="Formulario container-fluid test">
+            <label> TÍTULO :</label>
+            <input type="text" required name="otitulo" class="Titulo" maxlength="90" placeholder="Ex: Casa de veraneio..." /></p>
+            <label> DESCRIÇÃO:</label>
+            <input type=" text" required name="odesc" class="Descricao " maxlength="2000" placeholder="Ex: Casa bem localizada" /></p>
+            <label>QUARTOS:</label>
+            <input type="number" required name="orooms" min="0" class="Quartos " placeholder="Ex: 3 " /></p>
+            <label>VAGAS DE GARAGEM:</label>
+            <input type="number" required name="ogar" min="0" class="VagasDeGaragem " placeholder="Ex: 2" /></p>
+            <label>ÁREA DO TERRENO em m²:</label>
+            <input type="number" required name="oter" min="0" class="AreaDoTerreno " placeholder="Ex: 150" /></p>
+            <label>ÁREA CONSTRUIDA em m²:</label>
+            <input type="number" required name="ocont" min="0" class="AreaConstruida " placeholder="Ex: 80" /></p>
+            <label>LOCALIDADE:</label>
+            <input type="text" required name="olocal" class="Localidade " placeholder="Ex: Castelo/PI" /></p>
+            <label>PREÇO POR MÊS:</label>
+            <input type="number" required name="oalu" min="0" class="Preco " placeholder="Ex: 1500,00" /></p>
+            <label>IMAGEM (URL):</label>
+            <input type="url" required name="ourl" class="Imagem " placeholder="Ex: https://www.modelo.com/imagemcasa.png" />
+            </br>
+            <div class="buttons">
+                <br>
+                <button type="submit">Inserir</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+    </section>
+    <div class="resultados"></div>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js//vue.js"></script>
 
-                <label> TÍTULO :</label>
-                <!-- teste -->
-                <input type="text" required name="otitulo" class="Titulo" maxlength="90" placeholder="Ex: Casa de veraneio..." /></p>
-                <label> DESCRIÇÃO:</label>
-                <input type=" text " required name="odesc" class="Descricao " maxlength="2000" placeholder="Ex: Casa bem localizada" /></p>
-                <label>QUARTOS:</label>
-                <input type="number " required name="orooms" min="0" class="Quartos " placeholder="Ex: 3 " /></p>
-                <label>VAGAS DE GARAGEM:</label>
-                <input type="number " required name="ogar" min="0" class="VagasDeGaragem " placeholder="Ex: 2" /></p>
-                <label>ÁREA DO TERRENO em m²:</label>
-                <input type="number " required name="oter" min="0" class="AreaDoTerreno " placeholder="Ex: 150" /></p>
-                <label>ÁREA CONSTRUIDA em m²:</label>
-                <input type="number " required name="ocont" min="0" class="AreaConstruida " placeholder="Ex: 80" /></p>
-                <label>LOCALIDADE:</label>
-                <input type="text " required name="olocal" class="Localidade " placeholder="Ex: Castelo/PI" /></p>
-                <label>PREÇO POR MÊS:</label>
-                <input type="number " required name="oalu" min="0" class="Preco " placeholder="Ex: 1500,00" /></p>
-                <label>IMAGEM (URL):</label>
-                <input type="url " required name="ourl" class="Imagem " placeholder="Ex: https://www.modelo.com/imagemcasa.png" />
-                </br>
-                <div class="buttons">
-                    <button type="submit">Inserir</button>
-                    <button type="reset" onclick="limpar()">Limpar</button>
-                </div>
-            </form>
-        </section>
-        <div class="resultados"></div>
-        <script src="js/script.js"></script>
-
-    </body>
+</body>
 
 </html>

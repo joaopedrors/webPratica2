@@ -1,6 +1,21 @@
+.test {
+    background-color: #8C52FF;
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    border: 1px solid;
+}
+
+.styleSection {
+    background-image: url("../img/BG.png");
+}
+
 .container {
     padding: 20px;
-    margin: auto;
+    margin: 30px;
     width: 30%;
     border: 1px solid;
     display: flex;
@@ -8,10 +23,7 @@
     align-items: center;
     background: #8C52FF;
     border-radius: 10px;
-}
-
-.textColor {
-    color: white;
+    font-size: 16px;
 }
 
 .imagem {
@@ -19,13 +31,15 @@
     margin: 30px;
 }
 
-h2.main-title {
+.styletitle {
     color: white;
     background-color: #8C52FF;
-    border-radius: 20px;
-    margin: 15px;
-    padding: 50px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
     font-size: 25px;
+    width: 450px;
+    height: auto;
 }
 
 input {
@@ -34,9 +48,10 @@ input {
 }
 
 .resultados {
+    color: white;
     padding: 20px;
     margin: auto;
-    width: 30%;
+    width: 450px;
     border: 1px solid;
     display: flex;
     flex-direction: column;
